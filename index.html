@@ -101,6 +101,41 @@
                     </a>
  
                 </div>
+
+                <div class="hero-share">
+
+                    <span class="hero-share-label">Share Sofia&#39;s story:</span>
+
+                    <a class="share-icon fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsofiaswish.com%2F"
+                       target="_blank" rel="noopener" aria-label="Share on Facebook" title="Share on Facebook"
+                       onclick="gtag('event','share',{method:'facebook',location:'hero'});">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H8v3h2v7h3v-7h2.5l.5-3H13v-2c0-.6.4-1 1-1z"/></svg>
+                    </a>
+
+                    <a class="share-icon wa" href="https://api.whatsapp.com/send?text=Sofia%20is%2012%20and%20needs%20a%20living%20kidney%20donor.%20Please%20read%20her%20story%3A%20https%3A%2F%2Fsofiaswish.com%2F"
+                       target="_blank" rel="noopener" aria-label="Share on WhatsApp" title="Share on WhatsApp"
+                       onclick="gtag('event','share',{method:'whatsapp',location:'hero'});">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.1 14.9l-.3-.2-2.6.7.7-2.5-.2-.3A8 8 0 0 1 12 4zm-3.4 4.3c-.2 0-.5.1-.7.4-.3.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.7 2.8 4.3 3.8 2.1.8 2.5.7 3 .6.5-.1 1.5-.6 1.7-1.3.2-.6.2-1.2.1-1.3-.1-.1-.3-.2-.6-.3l-1.5-.7c-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-.7-.3-1.6-.7-2.4-1.9-.2-.3 0-.5.1-.6l.4-.5c.1-.2.1-.3 0-.5l-.7-1.7c-.2-.4-.4-.4-.6-.4h-.3z"/></svg>
+                    </a>
+
+                    <a class="share-icon em" href="mailto:?subject=Sofia%20needs%20a%20living%20kidney%20donor&body=Sofia%20is%2012%20and%20in%20kidney%20failure.%20Her%20story%20and%20how%20to%20be%20screened%3A%20https%3A%2F%2Fsofiaswish.com%2F"
+                       aria-label="Share by email" title="Share by email"
+                       onclick="gtag('event','share',{method:'email',location:'hero'});">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18c.6 0 1 .4 1 1v12c0 .6-.4 1-1 1H3c-.6 0-1-.4-1-1V6c0-.6.4-1 1-1zm9 8L4.4 7H19.6L12 13zM4 9.3V17h16V9.3l-7.4 5.9c-.4.3-.8.3-1.2 0L4 9.3z"/></svg>
+                    </a>
+
+                    <a class="share-icon fbp" href="https://www.facebook.com/1278772828654255"
+                       target="_blank" rel="noopener" aria-label="Follow Sofia&#39;s Wish on Facebook" title="Follow the Facebook page"
+                       onclick="gtag('event','follow_page',{location:'hero'});">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5a4.2 4.2 0 1 1 0 8.4 4.2 4.2 0 0 1 0-8.4zm0 10c4 0 7.4 2 7.4 4.4v2.6H4.6v-2.6c0-2.4 3.4-4.4 7.4-4.4z"/></svg>
+                    </a>
+
+                    <button class="share-icon lk" type="button" aria-label="Copy link" title="Copy link"
+                            onclick="navigator.clipboard.writeText('https://sofiaswish.com/');this.classList.add('copied');this.setAttribute('title','Link copied');gtag('event','share',{method:'copy_link',location:'hero'});">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.6 13.4a3 3 0 0 0 4.2 0l3-3a3 3 0 0 0-4.2-4.2l-1.2 1.2 1.4 1.4L15 7.6a1 1 0 0 1 1.4 1.4l-3 3a1 1 0 0 1-1.4 0l-1.4 1.4zM13.4 10.6a3 3 0 0 0-4.2 0l-3 3a3 3 0 0 0 4.2 4.2l1.2-1.2-1.4-1.4L9 16.4A1 1 0 0 1 7.6 15l3-3a1 1 0 0 1 1.4 0l1.4-1.4z"/></svg>
+                    </button>
+
+                </div>
  
             </div>
  
@@ -143,17 +178,23 @@
 
 
     <!-- WHY SOFIA NEEDS HELP -->
- 
-<section class="why-sofia">
- 
+
+<section class="why-sofia" id="why-sofia">
+
     <h2>
         WHY <span>SOFIA</span> NEEDS HELP
     </h2>
- 
+
+    <p class="why-lead">
+        Sofia has been on dialysis at home seven days a week since October 2025. Dialysis keeps her alive,
+        but only a transplant gives her her childhood back &mdash; and a kidney from a living donor
+        works better and lasts longer than one from a deceased donor.
+    </p>
+
     <div class="why-cards">
- 
+
         <div class="why-card pink">
- 
+
             <div class="why-icon pink-icon">
                 <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="30" cy="30" r="28" stroke="#e85a87" stroke-width="2.5" fill="#fff0f6"/>
@@ -164,18 +205,18 @@
                     <path d="M38 28 C39 30 39 34 37 36" stroke="#e85a87" stroke-width="1.5" stroke-linecap="round"/>
                 </svg>
             </div>
- 
+
             <h3>LIVING KIDNEY<br>DONOR NEEDED</h3>
- 
+
             <p>
-                A living donor can help Sofia by giving her a healthy kidney
-                and a second chance at life.
+                One healthy person can give Sofia a kidney &mdash; and a second chance at
+                school, sleepovers and growing up.
             </p>
- 
+
         </div>
- 
+
         <div class="why-card green">
- 
+
             <div class="why-icon green-icon">
                 <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="30" cy="30" r="28" stroke="#5bcb5a" stroke-width="2.5" fill="#f0fff0"/>
@@ -185,18 +226,18 @@
                     <path d="M24 33 C24 30 26 27 28 25" stroke="#5bcb5a" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
                 </svg>
             </div>
- 
-                        <h3>BLOOD TYPE:<br>O+ OR O&minus;</h3>
+
+            <h3>BLOOD TYPE:<br>O+ OR O&minus;</h3>
 
             <p>
-                Sofia can accept O positive or O negative. Every other blood type
-                can still help her through a paired exchange.
+                Sofia can accept O positive or O negative. <strong>Every other blood type can still
+                help</strong> through a paired exchange.
             </p>
- 
+
         </div>
- 
+
         <div class="why-card blue">
- 
+
             <div class="why-icon blue-icon">
                 <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="30" cy="30" r="28" stroke="#1b2b63" stroke-width="2.5" fill="#eef0f8"/>
@@ -204,120 +245,154 @@
                     <path d="M30 42 C30 42 16 34 16 25 C16 20.5 19.5 17 24 17 C26.5 17 28.8 18.2 30 20 C31.2 18.2 33.5 17 36 17 C40.5 17 44 20.5 44 25 C44 34 30 42 30 42Z" stroke="#1b2b63" stroke-width="2.2" fill="none"/>
                 </svg>
             </div>
- 
-            <h3>BETTER QUALITY<br>OF LIFE</h3>
- 
+
+            <h3>LIFE OFF<br>DIALYSIS</h3>
+
             <p>
-                A transplant would give Sofia more energy, freedom, and the
-                chance to do what she loves.
+                A transplant means energy, freedom, time with her family, and days that
+                are not built around a machine.
             </p>
- 
+
         </div>
- 
-        <div class="why-card pink">
- 
-            <div class="why-icon pink-icon">
-                <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="30" cy="30" r="28" stroke="#e85a87" stroke-width="2.5" fill="#fff0f6"/>
-                    <!-- Family: dad, mom, child -->
-                    <!-- child center -->
-                    <circle cx="30" cy="22" r="5" stroke="#e85a87" stroke-width="2" fill="none"/>
-                    <path d="M22 44 C22 37 26 34 30 34 C34 34 38 37 38 44" stroke="#e85a87" stroke-width="2" stroke-linecap="round" fill="none"/>
-                    <!-- left person -->
-                    <circle cx="18" cy="24" r="4" stroke="#e85a87" stroke-width="1.8" fill="none"/>
-                    <path d="M12 44 C12 38 14.5 35 18 35 C20 35 21.5 36 22.5 38" stroke="#e85a87" stroke-width="1.8" stroke-linecap="round" fill="none"/>
-                    <!-- right person -->
-                    <circle cx="42" cy="24" r="4" stroke="#e85a87" stroke-width="1.8" fill="none"/>
-                    <path d="M48 44 C48 38 45.5 35 42 35 C40 35 38.5 36 37.5 38" stroke="#e85a87" stroke-width="1.8" stroke-linecap="round" fill="none"/>
-                </svg>
-            </div>
- 
-            <h3>MORE TIME<br>WITH FAMILY</h3>
- 
-            <p>
-                With a new kidney, Sofia can continue making beautiful
-                memories with her loved ones.
-            </p>
- 
-        </div>
- 
+
     </div>
- 
-</section>
- 
-   <!-- LIVING DONATION FACTS -->
- 
-<section class="donation-facts">
- 
-    <h2>Living Donation Facts</h2>
- 
-    <div class="facts-grid">
- 
-        <div class="fact-card pink">
-            <h3>Medical Expenses Covered</h3>
-            <p>
-                Most donation-related medical expenses are typically covered.
-            </p>
+
+    <h3 class="facts-heading">What donating actually involves</h3>
+
+    <div class="facts-strip">
+
+        <div class="fact-item">
+            <strong>Your medical costs are covered</strong>
+            Sofia&#39;s insurance pays for the donor&#39;s evaluation, the surgery, the hospital stay
+            and follow-up care &mdash; even for a donor who has never met her.
         </div>
- 
-        <div class="fact-card green">
-            <h3>Travel Assistance</h3>
-            <p>
-                Travel and lodging support may be available for eligible donors.
-            </p>
+
+        <div class="fact-item">
+            <strong>Lost wages and travel can be reimbursed</strong>
+            Those are not automatically covered, but the National Living Donor Assistance Center
+            reimburses travel, lodging and lost wages for donors who qualify.
         </div>
- 
-        <div class="fact-card blue">
-            <h3>Full Support</h3>
-            <p>
-                Donors receive guidance and support throughout the entire process.
-            </p>
+
+        <div class="fact-item">
+            <strong>Someone is assigned to protect you</strong>
+            Federal rules require the hospital to give every potential donor an independent advocate
+            whose job is your interests &mdash; not Sofia&#39;s.
         </div>
- 
-        <div class="fact-card pink">
-            <h3>Healthy Life After Donation</h3>
-            <p>
-                Many donors continue to live healthy and active lives with one kidney.
-            </p>
+
+        <div class="fact-item">
+            <strong>Most donors recover in 4&ndash;6 weeks</strong>
+            Desk jobs often sooner, physically demanding jobs longer. Donating does not shorten
+            your life expectancy.
         </div>
- 
+
     </div>
- 
+
+    <p class="facts-more">
+        More detail in the <a href="#faq">questions below</a>.
+    </p>
+
 </section>
- 
+
     <!-- FAQ -->
- 
-    <section class="section gray">
- 
-        <h2>Frequently Asked Questions</h2>
- 
+
+    <section class="section gray" id="faq">
+
+        <h2>Questions Donors Actually Ask</h2>
+
+        <p style="text-align:center; color:#555; max-width:760px; margin:0 auto 30px;">
+            Answers below come from the National Kidney Foundation and the federal transplant network
+            (OPTN/UNOS). Your own transplant team will go through all of it with you before you decide anything.
+        </p>
+
         <div class="faq">
- 
+
             <details>
-                <summary>Can I live with one kidney?</summary>
+                <summary>Will donating cost me money?</summary>
                 <p>
-                    Yes. Most donors continue living healthy and normal lives.
+                    Not the medical part. The recipient&#39;s health insurance covers your evaluation, the
+                    surgery, your hospital stay and your follow-up appointments &mdash; whether or not you
+                    know the recipient. What is <em>not</em> automatically covered is lost wages and travel.
+                    The National Living Donor Assistance Center (NLDAC) reimburses travel, lodging, dependent
+                    care and lost wages for donors who qualify, and the transplant social worker helps you apply.
                 </p>
             </details>
- 
+
             <details>
-                <summary>Are donation expenses covered?</summary>
+                <summary>How much time off work will I need?</summary>
                 <p>
-                    Most donation-related medical expenses are covered.
+                    Most donors make a full recovery four to six weeks after surgery. People with desk or
+                    remote jobs are often back sooner; physically demanding jobs can take six to eight weeks.
+                    No lifting anything heavy for about six weeks. Most donors are in the hospital only one to
+                    three days.
                 </p>
             </details>
- 
+
+            <details>
+                <summary>Is it safe long term? Will I need a kidney later?</summary>
+                <p>
+                    Donating does not change your life expectancy, and donors are able to return to work,
+                    normal activity and a regular diet. Fewer than 1% of donors go on to develop end-stage
+                    kidney disease &mdash; and if that ever happened, you would receive higher priority on the
+                    national waiting list. Living donation is still surgery, so there are real risks
+                    (bleeding, infection, hernia) that your surgeon will go through with you honestly.
+                    Donors are screened thoroughly and are only approved if they are healthy.
+                </p>
+            </details>
+
+            <details>
+                <summary>What if I&#39;m not a match for Sofia?</summary>
+                <p>
+                    You can still help her. Through kidney paired donation, your kidney goes to a stranger
+                    who matches you, and their incompatible donor gives a matching kidney to Sofia. The
+                    federal program that arranges this is free to join, and your blood type does not have to
+                    match Sofia&#39;s. This is why donors of <strong>every</strong> blood type are worth
+                    screening.
+                </p>
+            </details>
+
+            <details>
+                <summary>Why does a living donor matter more than waiting for the list?</summary>
+                <p>
+                    A kidney from a living donor lasts about 15 to 20 years on average, compared with 7 to 10
+                    years from a deceased donor, and it is more likely to start working immediately. Sofia is
+                    12. The difference is measured in the years of her life.
+                </p>
+            </details>
+
+            <details>
+                <summary>Am I committing to anything by getting screened?</summary>
+                <p>
+                    No. The prescreening form takes about ten minutes and is confidential. You can stop at any
+                    point, for any reason, and you never have to give a reason. Sofia&#39;s family never sees
+                    your medical information. Federal rules require the hospital to assign you an independent
+                    donor advocate whose only job is to protect your interests and make sure your decision is
+                    free from pressure.
+                </p>
+            </details>
+
+            <details>
+                <summary>Can I donate if I&#39;m not local to Norfolk?</summary>
+                <p>
+                    Yes. Donors can be evaluated near home, and in paired donation the kidney can be shipped
+                    or the donor can travel. Start with the prescreening form and the team will work out
+                    logistics with you.
+                </p>
+            </details>
+
             <details>
                 <summary>How do I start?</summary>
                 <p>
-                    Begin by completing the donor screening form.
+                    Use the Sentara prescreening form in the <a href="#how-to-be-screened">How To Be
+                    Screened</a> section below, and enter Sofia&#39;s name, date of birth and CHKD as the
+                    transplant hospital. Questions first are welcome:
+                    <a href="mailto:kidney4sofia@gmail.com">kidney4sofia@gmail.com</a>.
                 </p>
             </details>
- 
+
         </div>
- 
+
     </section>
- 
+
     <!-- HOW TO BE SCREENED -->
 
     <section class="section" id="how-to-be-screened">
@@ -368,25 +443,6 @@
 
     </section>
 
-    <!-- CTA -->
- 
-    <section class="cta">
- 
-        <h2>Take The First Step Today</h2>
- 
-        <p>
-            Your kindness could change Sofia's future.
-        </p>
- 
-        <a href="https://sentara.donorscreen.org/register/now"
-            target="_blank" rel="noopener"
-            onclick="gtag('event','prescreen_click',{location:'cta'});"
-            class="btn primary">
-            Begin Prescreening
-        </a>
- 
-    </section>
- 
     <!-- GALLERY -->
  
     <section class="section">
@@ -464,6 +520,25 @@
 
  
  
+    <!-- CTA -->
+
+    <section class="cta">
+
+        <h2>Take The First Step Today</h2>
+
+        <p>
+            One person reading this page is Sofia&#39;s match. It takes about ten minutes to find out
+            if it is you.
+        </p>
+
+        <a href="#how-to-be-screened"
+            onclick="gtag('event','screening_scroll',{location:'bottom_cta'});"
+            class="btn primary">
+            See How To Be Screened
+        </a>
+
+    </section>
+
     <!-- FOOTER -->
  
     <footer>
